@@ -1,4 +1,5 @@
-# calcrenta
+# Calculadora del Impuesto a la Renta de Quinta Categoria
+# Personal de Educación
 
 This template should help get you started developing with Vue 3 in Vite.
 
