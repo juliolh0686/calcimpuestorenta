@@ -1,12 +1,17 @@
 <template>
   <h1>Calculater</h1>
+  <div class="container">
   <table>
     <thead>
       <tr>
         <th></th>
-        <th>Remuneración Mensual</th>
+        <th>Remuneración
+          <br>
+          Mensual</th>
         <th>Gratificaciones</th>
-        <th>Gratificaciones Extra. Ocasionales</th>
+        <th>Gratificaciones
+          <br>
+          Extra. Ocasionales</th>
         <th>Total Mensual</th>
       </tr>
     </thead>
@@ -106,7 +111,7 @@
       </tr>
     </tfoot>
   </table>
-
+</div>
   <div>
     <ul>
       <li>UIT Periodo 2022: {{UIT}}</li>
@@ -237,7 +242,6 @@
       <li> {{totalImpuestoRenta-sumaTotalDescuento}} </li>
     </ul>
   </div>
-
 </template>
 
 <script setup>
@@ -468,5 +472,26 @@
 </script>
 
 <style scoped>
-
+  body {
+    background-color: #F5F7FB;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  input[type=text] {
+    width: 150px;
+    padding: 2px;
+    margin: 1px;
+    box-sizing: border-box;
+    border: 1px solid #4b87e0;
+    outline: none;
+    border-radius: 2px;
+  }
+  input[type=text]:focus {
+    background-color: lightblue;
+  }
+  .container {
+    background-color: #fff;
+    color: #3f3f41;
+  }
 </style>
